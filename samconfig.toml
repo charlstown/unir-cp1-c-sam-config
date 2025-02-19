@@ -5,9 +5,9 @@
 
 version = 0.1
 
-[staging]
-[staging.deploy]
-[staging.deploy.parameters]
+[default]
+[default.deploy]
+[default.deploy.parameters]
 stack_name = "todo-list-aws-staging"
 s3_bucket = "aws-sam-cli-managed-staging-samclisourcebucket-cgnbucket"
 s3_prefix = "todo-list-aws"
