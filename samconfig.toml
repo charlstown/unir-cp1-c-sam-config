@@ -5,9 +5,9 @@
 
 version = 0.1
 
-[production]
-[production.deploy]
-[production.deploy.parameters]
+[default]
+[default.deploy]
+[default.deploy.parameters]
 stack_name = "todo-list-aws-production"
 s3_bucket = "aws-sam-cli-managed-production-samclisourcebucket-cgnbucket"
 s3_prefix = "todo-list-aws"
