@@ -1,0 +1,17 @@
+# ────────────────────────────────────────────
+# SAM Configuration File for STAGING Environment
+# This file is specific for the staging environment and should only be used in the "staging" branch.
+# ────────────────────────────────────────────
+
+version = 0.1
+
+[staging]
+[staging.deploy]
+[staging.deploy.parameters]
+stack_name = "todo-list-aws-staging"
+s3_bucket = "aws-sam-cli-managed-staging-samclisourcebucket-cgnbucket"
+s3_prefix = "todo-list-aws"
+region = "us-east-1"
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "Stage=\"staging\", TodoTableName=\"todo-table-staging\""
+image_repositories = []
